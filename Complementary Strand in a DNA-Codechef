@@ -1,0 +1,23 @@
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int T=sc.nextInt();
+		while(T-->0){
+		    int N=sc.nextInt();
+		    String S=sc.next();
+		    StringBuilder ans =new StringBuilder();
+		    for(int i=0; i<N; i++){
+		        if(S.charAt(i) == 'A')ans.append('T');
+		        else if(S.charAt(i) =='T')ans.append('A');
+		        else if(S.charAt(i) =='C')ans.append('G');
+		        else ans.append('C');
+		    }
+		    System.out.println(ans.toString());
+		}
+
+	}
+}
+
